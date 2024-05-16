@@ -6,7 +6,7 @@
 /*   By: sbartoul <sbartoul@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 10:56:02 by sbartoul          #+#    #+#             */
-/*   Updated: 2024/05/15 11:24:56 by sbartoul         ###   ########.fr       */
+/*   Updated: 2024/05/16 07:52:31 by sbartoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,6 @@ void	ft_sortfour(t_stack **a, t_stack **b)
 		sortfwo(a, b);
 		ft_ra(a, 1);
 	}
+	else
+		ft_printf("Neither condition was met\n");
 }

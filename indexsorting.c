@@ -6,7 +6,7 @@
 /*   By: sbartoul <sbartoul@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 12:08:36 by sbartoul          #+#    #+#             */
-/*   Updated: 2024/05/06 10:13:59 by sbartoul         ###   ########.fr       */
+/*   Updated: 2024/05/16 08:09:55 by sbartoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,23 +72,23 @@ void	fill_a_index(t_stack **a, int *sortedarray, int len)
 int	*getarray(t_stack **a, int len)
 {
 	t_stack	*temp;
-	int		*sortedarray;
+	int		*arr;
 	int		i;
 
 	if (*a == NULL)
 		return (0);
 	temp = *a;
-	sortedarray = malloc(sizeof(int) * len);
-	if (!sortedarray)
+	arr = malloc(sizeof(int) * len);
+	if (!arr)
 		return (0);
 	i = 0;
 	while (temp != NULL)
 	{
-		sortedarray[i] = temp->num;
+		arr[i] = temp->num;
 		temp = temp->next;
 		i++;
 	}
-	return (sortedarray);
+	return (arr);
 }
 
 void	fill_postion_index(t_stack **a)
